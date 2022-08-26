@@ -18,7 +18,7 @@ link = []
 #Instruções:
 instrucoes = "Siga as instruções a seguir:" \
             "\n1º- O programa deve " \
-            "\n\n1º- O arquivo deve estar em FORNO ARQUIVOS" \
+            "\n\n1º- O arquivo deve estar em CONFIDENCIAL" \
             "\n2º- Pressione Procurar arquivo e selecione o arquivo desejado" \
             "\n3º- Confira o nome e o diretório do arquivo" \
             "\n4º- Pressione Executar e espere o programa finalizar o processo" \
@@ -41,7 +41,7 @@ def selecionarArquivo():
 def execucaoFinal():
     # Checa se o app está aberto
     app = "C:APPConfidencial.exe"
-    if "contemp connect.exe" in (app.name() for app in process_iter()) == True:
+    if "APPConfidencial.exe" in (app.name() for app in process_iter()) == True:
         os.close(app)
     os.startfile(app)  # Inicialização do programa
     cm.sleep(18)
